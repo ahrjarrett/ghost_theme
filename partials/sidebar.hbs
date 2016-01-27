@@ -1,0 +1,78 @@
+<aside class="blog-sidebar">
+
+    {{!
+        Sidebar contains widgets for both main blog and dev blog.
+        They are conditionally shown/hidden via code injection.
+    }}
+
+    <section class="blog-subscribe blog-subscribe-main widget">
+        <h3>Join Thousands</h3>
+        <p>of subscribers who get fresh content from us once per week.</p>
+        <a class="button-add large wide" data-toggle="modal" data-target="#blogsubscribe">Subscribe Now</a>
+    </section>
+
+    <section class="blog-subscribe blog-subscribe-dev widget">
+        <h3>Sales Resources</h3>
+        <p>The latest sales technology in your inbox once per week.</p>
+        <a class="button-add large wide" data-toggle="modal" data-target="#blogsubscribe">Subscribe Now</a>
+    </section>
+
+    <section class="blog-text blog-text-dev widget">
+        <p>All the things:</p>
+        <ul>
+            <li><a href="//calendar.google.com">Before Your Onboarding Call</a></li>
+            <li><a href="https://trello.com/">Official 2016 Roadmap</a></li>
+            <li><a href="support/">Submit Support Ticket</a></li>
+            <li>Next Webinar: Wed Feb 10th @ 2:30 CST</li>
+        </ul>
+    </section>
+
+    <section class="twitter-box twitter-box-dev widget">
+        <a class="twitter-box-profilepic" href="https://twitter.com/tweetClosely"><img src="{{asset "images/fc-twitter-icon.png"}}" alt="Twitter profile picture" /></a>
+        <img class="twitter-box-coverpic" src="{{asset "images/twitterbg.jpg"}}" alt="Twitter cover image" nopin="nopin" />
+        <div class="twitter-box-content">
+            <h4>Follow-Through<h/h4>
+            <p>Sales collateral and product updates for @tweetClosely.</p>
+            <a href="https://twitter.com/tweetClosely" class="twitter-follow-button" data-show-count="false">Follow @tweetClosely</a>
+        </div>
+    </section>
+
+    <section class="popular-posts widget">
+        <h3>Our <mark>Top Posts</mark> Right Now</h3>
+        {{!
+            Yep this is static. Soz. You were probably hoping for something fancy.
+        }}
+        <ol>
+            <li><a href="https://close.ghost.io/how-the-latest-marketing-shift-affects-you-directly/"><span class="number" aria-hidden="true">1</span>How The Latest Marketing Shift Affects You Directly</a></li>
+            <li><a href="http://close.ghost.io/smb-marketing-checklist-for-2016/"><span class="number" aria-hidden="true">2</span>2016’s Small Business Marketing Checklist</a></li>
+            <li><a href="hhttp://close.ghost.io/glassfroggs-strategy-for-success-on-facebook-and-other-social-media/"><span class="number" aria-hidden="true">3</span><em>Guest Post:</em> “My 3 Strategies for Success on Facebook &amp; Other Social Media”</a></li>
+            <li><a href="http://close.ghost.io/case-studay-kuwayamas-brand-equity/"><span class="number" aria-hidden="true">4</span><em>Case Study: </em>Kuwayama's Brand Equity</a></li>
+            <li><a href="http://close.ghost.io/flipped-post-advanced-lead-funnels-i-o/"><span class="number" aria-hidden="true">5</span>Pipeline Mechanics Week 3</a></li>
+        </ol>
+    </section>
+
+    <section class="twitter-box twitter-box-main widget">
+        <a class="twitter-box-profilepic" href="http://twitter.com/tweetClosely"><img src="{{asset "images/twitterpic.png"}}" alt="Twitter profile picture" /></a>
+        <img class="twitter-box-coverpic" src="{{asset "images/twitterbg.jpg"}}" alt="Twitter cover image" nopin="nopin" />
+        <div class="twitter-box-content">
+            <h4>FollowClosely Clients</h4>
+            <p>Make sure you follow @tweetClosely before you attend your Onboarding Call!</p>
+            <a href="https://twitter.com/tweetClosely" class="twitter-follow-button" data-show-count="false">Follow @tweetClosely</a>
+        </div>
+    </section>
+
+    <a class="ghost-love widget" href="demo/">
+        <h3>Need some help? <span class="highlight">Let’s Talk</span></h3>
+        <h4>Stop playing catch-up and let us pick up the slack</h4>
+        <div class="ghost-love-button">Test it Out</div>
+    </a>
+
+    <section class="facebook-box widget">
+        <div class="fb-like-box" data-href="https://www.facebook.com/FollowClosely/" data-width="290" data-height="300" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+    </section>
+
+    <section class="gplus-box widget">
+        <div class="g-page" data-href="//plus.google.com/" data-theme="dark" data-layout="landscape" data-showtagline="false" data-rel="publisher"></div>
+    </section>
+
+</aside>
